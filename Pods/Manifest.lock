@@ -1,0 +1,22 @@
+PODS:
+  - GoogleMaps (1.10.1)
+  - MarqueeLabel (2.2.5)
+  - UIActionSheet+Blocks (0.9)
+  - UIAlertController+Blocks (0.9)
+  - UIAlertView+Blocks (0.9)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - MarqueeLabel
+  - UIActionSheet+Blocks (>= 0.8)
+  - UIAlertController+Blocks (>= 0.8)
+  - UIAlertView+Blocks (>= 0.8)
+
+SPEC CHECKSUMS:
+  GoogleMaps: ebf08677f181d9c2dcdbd1721d206f02beccc9b1
+  MarqueeLabel: 65ca60ee9ba554be34f35339004c6c9fe6366a31
+  UIActionSheet+Blocks: e180b7dad0a721ab7f212ac9742af799008bb358
+  UIAlertController+Blocks: b48c673ff60726da468b32ab21bbc7683512d45b
+  UIAlertView+Blocks: a46c99c5144f6c5dbc7d62fd2a0678daceec89a3
+
+COCOAPODS: 0.38.2

@@ -1,0 +1,45 @@
+//
+//  Utility.m
+//  OrderNowNetwork
+//
+//  Created by Aliakber Hussain on 11/02/2014.
+//  Copyright (c) 2014 abc. All rights reserved.
+//
+
+#import "Utility.h"
+#import<CoreGraphics/CoreGraphics.h>
+
+@implementation Utility
+
++(void)createLayerWithRoundRect:(UIView*)view radius:(float)radius{
+    CALayer * l = [view layer];
+    [l setMasksToBounds:YES];
+    [l setCornerRadius:radius];
+    [l setBorderWidth:3.0];
+    [l setBorderColor:[[UIColor clearColor] CGColor]];
+}
+
++ (NSMutableArray*) getAlphabets {
+    
+    return [[NSMutableArray alloc]initWithObjects:@"A", @"B", @"C", @"D", @"E", @"F", @"G", @"H", @"I",
+            @"J", @"K", @"L", @"M", @"N", @"O", @"P", @"Q", @"R", @"S", @"T",
+            @"U", @"V", @"W", @"X", @"Y", @"Z",@"#", nil];
+}
+
++(void)createLeftMenuButton:(UIViewController *)vc sel:(SEL)sel{
+    UIButton* menuButton=[[UIButton alloc]initWithFrame:CGRectMake(10, 0, 18, 18)];
+    [menuButton setImage:[UIImage imageNamed:@"menu"] forState:UIControlStateNormal];
+    [menuButton addTarget:vc action:sel forControlEvents:UIControlEventTouchUpInside];
+    vc.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithCustomView:menuButton];
+}
+
+
++(NSString *) getStringFromObject:(NSObject *) object
+{
+    if ([object isKindOfClass:[NSNull class]]) {
+        return @"";
+    }
+    return (NSString *)object;
+}
+
+@end

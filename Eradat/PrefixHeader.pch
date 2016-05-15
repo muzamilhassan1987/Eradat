@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  Eradat
+//
+//  Created by Soomro Shahid on 6/24/15.
+//  Copyright (c) 2015 Muzamil Hassan. All rights reserved.
+//
+
+#ifndef Eradat_PrefixHeader_pch
+#define Eradat_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define DEBUG_MODE 1
+
+#if DEBUG_MODE
+#   define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#   define NSLog(...)
+#endif
+
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Header.h"
+#endif

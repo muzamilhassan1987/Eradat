@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapCalloutView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="MapCalloutView">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_get_direction" translatesAutoresizingMaskIntoConstraints="NO" id="efv-PG-Y3G">
+                    <rect key="frame" x="0.0" y="0.0" width="129" height="83"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1L-QB-30G">
+                    <rect key="frame" x="10" y="34" width="110" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="x1L-QB-30G" secondAttribute="height" multiplier="55:12" id="NhD-7T-tht"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                    <inset key="titleEdgeInsets" minX="24" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" backgroundImage="button_totalDistance">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUS STOP QUBA STREET" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsh-b1-hWR">
+                    <rect key="frame" x="8" y="3" width="112" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="qsh-b1-hWR" secondAttribute="height" multiplier="112:29" id="NNs-fy-KdW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GET DISTANCE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kv1-se-RUT">
+                    <rect key="frame" x="43" y="31" width="72" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Kv1-se-RUT" secondAttribute="height" multiplier="72:29" id="7v8-TG-6vU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="9"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="qsh-b1-hWR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="3" id="0Zx-A6-mEf"/>
+                <constraint firstItem="Kv1-se-RUT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="43" id="1BR-EE-Hen"/>
+                <constraint firstAttribute="bottom" secondItem="x1L-QB-30G" secondAttribute="bottom" constant="25" id="7cP-LS-eAk"/>
+                <constraint firstAttribute="trailing" secondItem="qsh-b1-hWR" secondAttribute="trailing" constant="10" id="8mZ-h5-9xP"/>
+                <constraint firstItem="efv-PG-Y3G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BsL-A5-seG"/>
+                <constraint firstItem="qsh-b1-hWR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="O3q-vc-e2I"/>
+                <constraint firstAttribute="trailing" secondItem="x1L-QB-30G" secondAttribute="trailing" constant="10" id="OuA-9x-KY8"/>
+                <constraint firstItem="x1L-QB-30G" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="Pgy-BR-La0"/>
+                <constraint firstAttribute="trailing" secondItem="Kv1-se-RUT" secondAttribute="trailing" constant="15" id="X9y-ji-hbS"/>
+                <constraint firstAttribute="bottom" secondItem="Kv1-se-RUT" secondAttribute="bottom" constant="23" id="bZd-5I-5Iv"/>
+                <constraint firstAttribute="trailing" secondItem="efv-PG-Y3G" secondAttribute="trailing" constant="1" id="dBq-S6-ShY"/>
+                <constraint firstItem="efv-PG-Y3G" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w5q-jD-zPe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="busStopLabel" destination="qsh-b1-hWR" id="tgk-Ez-KIr"/>
+                <outlet property="directionButton" destination="x1L-QB-30G" id="0po-zY-Nd4"/>
+                <outlet property="totalDistanceLabel" destination="Kv1-se-RUT" id="UPT-P1-jqS"/>
+            </connections>
+            <point key="canvasLocation" x="266" y="323.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_get_direction" width="128" height="83"/>
+        <image name="button_totalDistance" width="112" height="27"/>
+    </resources>
+</document>
